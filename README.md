@@ -51,3 +51,43 @@ This is also my first real engineering project. I had zero coding experience whe
 - A webcam
 
 ### Install
+
+### Run
+
+Press **Q** in the camera window to quit.
+
+## Tunable settings
+
+In `blinklock_final.py`:
+
+```python
+EAR_THRESHOLD = 0.20         # raise if blinks aren't detected
+AWAY_LOCK_SECONDS = 3.0      # how long without a face before lock
+LONG_BLINK_SECONDS = 2.0     # how long eyes must stay closed for manual lock
+```
+
+
+## What I learned
+
+- Computer vision basics (face landmarks, image processing)
+- Real-time state tracking in Python
+- Calling system APIs (`ctypes`) to interact with the OS
+- Iterating based on user testing (v1 → v2 → final)
+- Reading library docs and debugging error messages
+
+## What's next
+
+- [ ] Face recognition — recognize the owner vs strangers
+- [ ] Configurable settings via a small UI instead of editing code
+- [ ] Mac and Linux support (different lock APIs)
+- [ ] Package as a standalone .exe so non-coders can use it
+
+## Built by
+
+**Ulugbek Mirzarustamov** · 2026 · Tashkent, Uzbekistan
+
+Part of my journey to ship 30 projects in 30 days, inspired by [Buildcored](https://buildcored.com).
+
+[LinkedIn](https://www.linkedin.com/in/ulugbekmirzarustamov) · [Telegram](https://t.me/lifewithbekk) · [Email](mailto:umirzarustamov@gmail.com)
+
+*MIT Licensed — free to use, modify, share.*
